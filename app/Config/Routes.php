@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('estudiantes', 'EstudiantesController::index');
+$routes->post('login', 'EmpleadosController::index');
