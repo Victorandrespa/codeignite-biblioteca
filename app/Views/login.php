@@ -34,7 +34,7 @@
                                     placeholder="Ingrese su contraseña" required>
                             </div>
                             <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-outline-primary">Entrar</button>
+                                <button type="submit" class="btn btn-outline-dark">Entrar</button>
                             </div>
                         </form>
                     </div>

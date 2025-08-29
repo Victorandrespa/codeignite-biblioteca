@@ -1,0 +1,42 @@
+CRITICAL - 2025-08-29 14:59:38 --> ErrorException: Undefined variable $empleado
+[Method: GET, Route: estudiantes]
+in APPPATH\Views\estudiantes.php on line 47.
+ 1 APPPATH\Views\estudiantes.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', 'C:\\xampp2\\htdocs\\codeigniter_biblioteca2\\app\\Views\\estudiantes.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\codeigniter_biblioteca2\\app\\Views\\estudiantes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('estudiantes', [], true)
+ 5 APPPATH\Controllers\EstudiantesController.php(13): view('estudiantes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudiantesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudiantesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-29 15:00:30 --> ErrorException: Undefined array key "estudiante_id"
+[Method: GET, Route: estudiantes]
+in APPPATH\Views\estudiantes.php on line 47.
+ 1 APPPATH\Views\estudiantes.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estudiante_id"', 'C:\\xampp2\\htdocs\\codeigniter_biblioteca2\\app\\Views\\estudiantes.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\codeigniter_biblioteca2\\app\\Views\\estudiantes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('estudiantes', [], true)
+ 5 APPPATH\Controllers\EstudiantesController.php(13): view('estudiantes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudiantesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudiantesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-29 15:01:40 --> ErrorException: Undefined array key "estudiante_id"
+[Method: GET, Route: estudiantes]
+in APPPATH\Views\estudiantes.php on line 47.
+ 1 APPPATH\Views\estudiantes.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estudiante_id"', 'C:\\xampp2\\htdocs\\codeigniter_biblioteca2\\app\\Views\\estudiantes.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\codeigniter_biblioteca2\\app\\Views\\estudiantes.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('estudiantes', [], true)
+ 5 APPPATH\Controllers\EstudiantesController.php(13): view('estudiantes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudiantesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudiantesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
