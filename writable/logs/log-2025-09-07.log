@@ -1,0 +1,436 @@
+CRITICAL - 2025-09-07 00:00:34 --> Error: Class "App\Controllers\EditorialesModel" not found
+[Method: GET, Route: verEditoriales]
+in APPPATH\Controllers\EditorialesController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EditorialesController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 00:58:55 --> Error: Class "App\Controllers\EditorialesModel" not found
+[Method: GET, Route: verEditoriales]
+in APPPATH\Controllers\EditorialesController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EditorialesController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 00:59:37 --> Error: Class "App\Controllers\PrestamosModel" not found
+[Method: GET, Route: verEmpleados]
+in APPPATH\Controllers\PrestamosController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrestamosController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestamosController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:01:30 --> Error: Class "App\Controllers\EditorialesModel" not found
+[Method: GET, Route: verEditoriales]
+in APPPATH\Controllers\EditorialesController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EditorialesController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-07 01:04:18 --> mysqli_sql_exception: Unknown column 'password' in 'where clause' in C:\xampp\htdocs\codeignite-biblioteca\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeignite-biblioteca\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeignite-biblioteca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeignite-biblioteca\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\codeignite-biblioteca\app\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+#8 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+#9 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeignite-biblioteca\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeignite-biblioteca\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeignite-biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-09-07 01:04:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'password' in 'where clause'
+[Method: GET, Route: verEmpleados]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:04:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'password' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:04:18 --> [Caused by] mysqli_sql_exception: Unknown column 'password' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:04:26 --> Error: Class "App\Controllers\EstadosModel" not found
+[Method: GET, Route: verEstados]
+in APPPATH\Controllers\EstadosController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstadosController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstadosController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:05:29 --> Error: Class "App\Controllers\EditorialesModel" not found
+[Method: GET, Route: verEditoriales]
+in APPPATH\Controllers\EditorialesController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EditorialesController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditorialesController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-07 01:09:01 --> mysqli_sql_exception: Unknown column 'password' in 'where clause' in C:\xampp\htdocs\codeignite-biblioteca\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeignite-biblioteca\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeignite-biblioteca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeignite-biblioteca\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\codeignite-biblioteca\app\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+#8 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+#9 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeignite-biblioteca\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeignite-biblioteca\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeignite-biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-09-07 01:09:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'password' in 'where clause'
+[Method: GET, Route: verEmpleados]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:09:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'password' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:09:01 --> [Caused by] mysqli_sql_exception: Unknown column 'password' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-09-07 01:09:26 --> mysqli_sql_exception: Unknown column 'password' in 'where clause' in C:\xampp\htdocs\codeignite-biblioteca\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeignite-biblioteca\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeignite-biblioteca\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeignite-biblioteca\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeignite-biblioteca\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\codeignite-biblioteca\app\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+#8 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+#9 C:\xampp\htdocs\codeignite-biblioteca\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeignite-biblioteca\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeignite-biblioteca\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeignite-biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-09-07 01:09:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'password' in 'where clause'
+[Method: GET, Route: verEmpleados]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:09:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'password' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 01:09:26 --> [Caused by] mysqli_sql_exception: Unknown column 'password' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `codigo_empleado` IS NULL
+AND `password` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\EmpleadosController.php(15): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadosController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadosController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 02:02:47 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: GET, Route: verAutores]
+in APPPATH\Controllers\AutoresController.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Controllers\\AutoresController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AutoresController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AutoresController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\AutoresController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 02:02:50 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: GET, Route: verAutores]
+in APPPATH\Controllers\AutoresController.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Controllers\\AutoresController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AutoresController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AutoresController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\AutoresController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 16:54:45 --> ErrorException: Undefined variable $estudiantes
+[Method: GET, Route: verAutores]
+in APPPATH\Views\autores.php on line 102.
+ 1 APPPATH\Views\autores.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estudiantes', 'C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Views\\autores.php', 102)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Views\\autores.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('autores', [], true)
+ 5 APPPATH\Controllers\AutoresController.php(13): view('autores', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AutoresController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 16:54:49 --> ErrorException: Undefined variable $estudiantes
+[Method: GET, Route: verAutores]
+in APPPATH\Views\autores.php on line 102.
+ 1 APPPATH\Views\autores.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estudiantes', 'C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Views\\autores.php', 102)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Views\\autores.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('autores', [], true)
+ 5 APPPATH\Controllers\AutoresController.php(13): view('autores', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AutoresController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 16:58:31 --> ErrorException: Undefined variable $estudiantes
+[Method: GET, Route: verAutores]
+in APPPATH\Views\autores.php on line 102.
+ 1 APPPATH\Views\autores.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estudiantes', 'C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Views\\autores.php', 102)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Views\\autores.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('autores', [], true)
+ 5 APPPATH\Controllers\AutoresController.php(13): view('autores', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AutoresController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 16:58:34 --> ErrorException: Undefined variable $estudiantes
+[Method: GET, Route: verAutores]
+in APPPATH\Views\autores.php on line 102.
+ 1 APPPATH\Views\autores.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estudiantes', 'C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Views\\autores.php', 102)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Views\\autores.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('autores', [], true)
+ 5 APPPATH\Controllers\AutoresController.php(13): view('autores', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AutoresController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 17:11:01 --> ErrorException: Undefined variable $estudiante
+[Method: GET, Route: verAutores]
+in APPPATH\Controllers\AutoresController.php on line 12.
+ 1 APPPATH\Controllers\AutoresController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estudiante', 'C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Controllers\\AutoresController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AutoresController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 17:11:04 --> ErrorException: Undefined variable $estudiante
+[Method: GET, Route: verAutores]
+in APPPATH\Controllers\AutoresController.php on line 12.
+ 1 APPPATH\Controllers\AutoresController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estudiante', 'C:\\xampp\\htdocs\\codeignite-biblioteca\\app\\Controllers\\AutoresController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AutoresController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 19:39:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "update_autores.php"
+[Method: GET, Route: update_autor/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('update_autores.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('update_autores', [], true)
+ 3 APPPATH\Controllers\AutoresController.php(44): view('update_autores', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AutoresController->buscar('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

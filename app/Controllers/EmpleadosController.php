@@ -5,7 +5,15 @@ use App\Models\EmpleadosModel;
 
 class EmpleadosController extends BaseController
 {
-    public function index()
+     public function index(): string
+    {
+        //Crea un objeto 
+        $estudiantes = new EmpleadosModel();
+        $datos['datos'] = $estudiantes->findAll();
+        return view('empleados', $datos);
+    }
+
+    public function login()
     {
         //iniciar la clase = crear un objeto
         $empleado = new EmpleadosModel();
