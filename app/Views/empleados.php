@@ -41,15 +41,19 @@
                     </div>
                     <div class="modal-body">
                         <form action="agregarEmpleado" method="post">
+
                             <label for="txt_c_empleado" class="form-label">Codigo Empleado:</label>
                             <input type="text" name="txt_c_empleado" id="txt_c_empleado" class="form-control">
 
                             <label for="txt_nombre" class="form-label">Nombre:</label>
                             <input type="text" name="txt_nombre" id="txt_nombre" class="form-control">
+
                             <label for="txt_apellido" class="form-label">Apellido:</label>
                             <input type="text" name="txt_apellido" id="txt_apellido" class="form-control">
+
                             <label for="txt_direccion" class="form-label">Direccion:</label>
                             <input type="text" name="txt_direccion" id="txt_direccion" class="form-control">
+                            
                             <label for="txt_email" class="form-label">Email:</label>
                             <input type="email" name="txt_email" id="txt_email" class="form-control">
 
@@ -97,8 +101,8 @@
                         <td class="d-flex justify-content-center gap-2 ">
                             <!-- <a href="</?= base_url('') . $estudiante['estudiante_id']; ?>"
                                 class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a> -->
-                            <a href="" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
-                            <a href="" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
+                            <a href="<?= base_url('update_empleado/') . $estudiante['codigo_empleado']; ?>" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
+                            <a href="<?= base_url('eliminar_empleado/') . $estudiante['codigo_empleado']; ?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
                         </td>
                     </tr>
                     <?php

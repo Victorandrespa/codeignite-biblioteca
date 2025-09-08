@@ -7,31 +7,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Autores</title>
+    <title>Estado</title>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col-8 offset-2">
-                <h2 class="my-4">Update Autores</h2>
-                <form action="<?= base_url('editar_autor') ?>" method="post">
+                <h2 class="my-4">Update Estado</h2>
+                <form action="<?= base_url('editar_estado') ?>" method="post">
 
-                    <label for="txt_c_autor" class="form-label">Codigo Autor:</label>
-                    <input type="text" name="txt_c_autor" id="txt_c_autor" class="form-control"
-                        value="<?= $datos['codigo_autor'] ?>" readonly>
-
-                    <label for="txt_apellido" class="form-label">Apellido:</label>
-                    <input type="text" name="txt_apellido" id="txt_apellido" class="form-control"
-                        value="<?= $datos['apellido'] ?>">
+                    <label for="txt_c_estado" class="form-label">Codigo Estado:</label>
+                    <input type="text" name="txt_c_estado" id="txt_c_estado" class="form-control"
+                        value="<?= $datos['codigo_estado'] ?>" readonly>
 
                     <label for="txt_nombre" class="form-label">Nombre:</label>
                     <input type="text" name="txt_nombre" id="txt_nombre" class="form-control"
                         value="<?= $datos['nombre'] ?>">
-                          
-                    <label for="txt_nacionalidad" class="form-label">Nacionalidad:</label>
-                    <input type="text" name="txt_nacionalidad" id="txt_nacionalidad" class="form-control"
-                        value="<?= $datos['nacionalidad'] ?>">
                    
 
                     <button type="submit" class="btn btn-outline-dark mt-3 w-100">Guardar</button>

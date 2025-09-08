@@ -40,16 +40,20 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="agregarEmpleado" method="post">
+                        <form action="agregarEditorial" method="post">
+
                             <label for="txt_c_editorial" class="form-label">Codigo Editorial:</label>
                             <input type="text" name="txt_c_editorial" id="txt_c_editorial" class="form-control">
 
                             <label for="txt_nombre" class="form-label">Nombre:</label>
                             <input type="text" name="txt_nombre" id="txt_nombre" class="form-control">
+
                             <label for="txt_direccion" class="form-label">Direccion:</label>
                             <input type="text" name="txt_direccion" id="txt_direccion" class="form-control">
+                            
                             <label for="txt_telefono" class="form-label">Telefono:</label>
                             <input type="number" name="txt_telefono" id="txt_telefono" class="form-control">
+                            
                             <label for="txt_email" class="form-label">Email:</label>
                             <input type="email" name="txt_email" id="txt_email" class="form-control">
 
@@ -67,6 +71,20 @@
         </div>
 
 
+         <?php if (session()->getFlashdata('mensaje')): ?>
+            <div id="mensaje" class="alert alert-success">
+                <?= session()->getFlashdata('mensaje'); ?>
+            </div>
+        <?php endif; ?>
+        <script>
+        // Ocultar el mensaje después de 3 segundos
+            setTimeout(function() {
+                var mensaje = document.getElementById('mensaje');
+                if (mensaje) {
+                mensaje.style.display = 'none';
+            }
+        }, 3000); // 3000 ms = 3 segundos
+        </script>
 
 
 
@@ -97,8 +115,8 @@
                         <td class="d-flex justify-content-center gap-2 ">
                             <!-- <a href="</?= base_url('') . $estudiante['estudiante_id']; ?>"
                                 class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a> -->
-                            <a href="" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
-                            <a href="" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
+                            <a href="<?= base_url('update_editorial/') . $estudiante['codigo_editorial']; ?>" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
+                            <a href="<?= base_url('eliminar_editorial/') . $estudiante['codigo_editorial']; ?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
                         </td>
                     </tr>
                     <?php

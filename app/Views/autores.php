@@ -41,12 +41,16 @@
                     </div>
                     <div class="modal-body">
                         <form action="agregarAutor" method="post">
+
                             <label for="txt_c_autor" class="form-label">Codigo autor:</label>
                             <input type="text" name="txt_c_autor" id="txt_c_autor" class="form-control">
+
                             <label for="txt_apellido" class="form-label">Apellido:</label>
                             <input type="text" name="txt_apellido" id="txt_apellido" class="form-control">
+
                             <label for="txt_nombre" class="form-label">Nombre:</label>
                             <input type="text" name="txt_nombre" id="txt_nombre" class="form-control">
+                            
                             <label for="txt_nacionalidad" class="form-label">Nacionalidad:</label>
                             <input type="text" name="txt_nacionalidad" id="txt_nacionalidad" class="form-control">
                            
@@ -70,7 +74,15 @@
                 <?= session()->getFlashdata('mensaje'); ?>
             </div>
         <?php endif; ?>
-
+        <script>
+        // Ocultar el mensaje después de 3 segundos
+            setTimeout(function() {
+                var mensaje = document.getElementById('mensaje');
+                if (mensaje) {
+                mensaje.style.display = 'none';
+            }
+        }, 3000); // 3000 ms = 3 segundos
+        </script>
 
 
 

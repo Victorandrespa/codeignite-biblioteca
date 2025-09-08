@@ -40,18 +40,23 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="agregarEmpleado" method="post">
+                        <form action="agregarPrestamo" method="post">
+
                             <label for="txt_n_prestamo" class="form-label">Numero Prestamo:</label>
                             <input type="text" name="txt_n_prestamo" id="txt_n_prestamo" class="form-control">
 
                             <label for="txt_c_libro" class="form-label">Codigo Libro:</label>
                             <input type="text" name="txt_c_libro" id="txt_c_libro" class="form-control">
+
                             <label for="txt_c_alumno" class="form-label">Carne alumno:</label>
                             <input type="text" name="txt_c_alumno" id="txt_c_alumno" class="form-control">
+
                             <label for="txt_f_prestamo" class="form-label">Fecha Prestamo:</label>
                             <input type="text" name="txt_f_prestamo" id="txt_f_prestamo" class="form-control">
+
                             <label for="txt_f_devolucion" class="form-label">Fecha Devolucion:</label>
                             <input type="text" name="txt_f_devolucion" id="txt_f_devolucion" class="form-control">
+                            
                             <label for="txt_c_empleado" class="form-label">Codigo Empleado:</label>
                             <input type="text" name="txt_c_empleado" id="txt_c_empleado" class="form-control">
                            
@@ -102,8 +107,8 @@
                         <td class="d-flex justify-content-center gap-2 ">
                             <!-- <a href="</?= base_url('') . $estudiante['estudiante_id']; ?>"
                                 class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a> -->
-                            <a href="" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
-                            <a href="" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
+                            <a href="<?= base_url('update_prestamo/') . $estudiante['numero_prestamo']; ?>" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
+                            <a href="<?= base_url('eliminar_prestamo/') . $estudiante['numero_prestamo']; ?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
                         </td>
                     </tr>
                     <?php

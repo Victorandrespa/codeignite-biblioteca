@@ -40,24 +40,32 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="agregarEmpleado" method="post">
+                        <form action="agregarLibro" method="post">
+
                             <label for="txt_id" class="form-label">Codigo Libro:</label>
                             <input type="text" name="txt_id" id="txt_id" class="form-control">
 
                             <label for="txt_c_autor" class="form-label">Codigo autor:</label>
                             <input type="text" name="txt_c_autor" id="txt_c_autor" class="form-control">
+
                             <label for="txt_c_editorial" class="form-label">Codigo Editorial:</label>
                             <input type="text" name="txt_c_editorial" id="txt_c_editorial" class="form-control">
+
                             <label for="txt_titulo" class="form-label">Titulo:</label>
                             <input type="text" name="txt_titulo" id="txt_titulo" class="form-control">
-                            <label for="txt_numero" class="form-label">Numero:</label>
+
+                            <label for="txt_numero" class="form-label">Numero paginas:</label>
                             <input type="number" name="txt_numero" id="txt_numero" class="form-control">
+
                             <label for="txt_tamanio" class="form-label">Tamaño:</label>
                             <input type="number" name="txt_tamanio" id="txt_tamanio" class="form-control">
+
                             <label for="txt_precio" class="form-label">Precio:</label>
                             <input type="date" name="txt_precio" id="txt_precio" class="form-control">
+
                             <label for="txt_estado" class="form-label">Estado:</label>
                             <input type="text" name="txt_estado" id="txt_estado" class="form-control">
+
                             <label for="txt_edicion" class="form-label">Edicion:</label>
                             <input type="text" name="txt_edicion" id="txt_edicion" class="form-control">
 
@@ -113,8 +121,8 @@
                         <td class="d-flex justify-content-center gap-2 ">
                             <!-- <a href="</?= base_url('') . $estudiante['estudiante_id']; ?>"
                                 class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a> -->
-                            <a href="" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
-                            <a href="" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
+                            <a href="<?= base_url('update_libro/') . $estudiante['codigo_libro']; ?>" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
+                            <a href="<?= base_url('eliminar_libro/') . $estudiante['codigo_libro']; ?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
                         </td>
                     </tr>
                     <?php

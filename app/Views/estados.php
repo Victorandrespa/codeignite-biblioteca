@@ -40,7 +40,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="agregarEmpleado" method="post">
+                        <form action="agregarEstado" method="post">
+
                             <label for="txt_c_estado" class="form-label">Codigo Estado:</label>
                             <input type="text" name="txt_c_estado" id="txt_c_estado" class="form-control">
 
@@ -86,8 +87,8 @@
                         <td class="d-flex justify-content-center gap-2 ">
                             <!-- <a href="</?= base_url('') . $estudiante['estudiante_id']; ?>"
                                 class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a> -->
-                            <a href="" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
-                            <a href="" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
+                            <a href="<?= base_url('update_estado/') . $estudiante['codigo_estado']; ?>" class="btn btn-outline-dark"><i class="bi bi-pencil"></i></a>
+                            <a href="<?= base_url('eliminar_estado/') . $estudiante['codigo_estado']; ?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
                         </td>
                     </tr>
                     <?php
