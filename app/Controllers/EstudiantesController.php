@@ -45,7 +45,7 @@ class EstudiantesController extends BaseController
     {
         $estudiante = new EstudiantesModel();
         $datos['datos']= $estudiante->where(['carne_alumno' => $id])->first();
-        return view('update_alumno', $datos);
+        return view('update_estudiante', $datos);
     }
     public function editar($id)
     {

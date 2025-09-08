@@ -40,7 +40,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="agregarEstudiantes" method="post">
+                        <form action="agregarEstudiante" method="post">
                             
                             <label for="txt_id" class="form-label">Carne:</label>
                             <input type="text" name="txt_id" id="txt_id" class="form-control">
@@ -52,7 +52,7 @@
                             <input type="text" name="txt_apellido" id="txt_apellido" class="form-control">
 
                             <label for="txt_direccion" class="form-label">Direccion:</label>
-                            <input type="number" name="txt_direccion" id="txt_direccion" class="form-control">
+                            <input type="text" name="txt_direccion" id="txt_direccion" class="form-control">
 
                             <label for="txt_telefono" class="form-label">Telefono:</label>
                             <input type="number" name="txt_telefono" id="txt_telefono" class="form-control">
@@ -80,6 +80,21 @@
         </div>
 
 
+
+         <?php if (session()->getFlashdata('mensaje')): ?>
+            <div id="mensaje" class="alert alert-success">
+                <?= session()->getFlashdata('mensaje'); ?>
+            </div>
+        <?php endif; ?>
+        <script>
+        // Ocultar el mensaje después de 3 segundos
+            setTimeout(function() {
+                var mensaje = document.getElementById('mensaje');
+                if (mensaje) {
+                mensaje.style.display = 'none';
+            }
+        }, 3000); // 3000 ms = 3 segundos
+        </script>
 
 
 

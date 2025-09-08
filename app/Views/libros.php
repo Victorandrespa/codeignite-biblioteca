@@ -61,7 +61,7 @@
                             <input type="number" name="txt_tamanio" id="txt_tamanio" class="form-control">
 
                             <label for="txt_precio" class="form-label">Precio:</label>
-                            <input type="date" name="txt_precio" id="txt_precio" class="form-control">
+                            <input type="number" name="txt_precio" id="txt_precio" class="form-control">
 
                             <label for="txt_estado" class="form-label">Estado:</label>
                             <input type="text" name="txt_estado" id="txt_estado" class="form-control">
@@ -83,6 +83,20 @@
         </div>
 
 
+        <?php if (session()->getFlashdata('mensaje')): ?>
+            <div id="mensaje" class="alert alert-success">
+                <?= session()->getFlashdata('mensaje'); ?>
+            </div>
+        <?php endif; ?>
+        <script>
+        // Ocultar el mensaje después de 3 segundos
+            setTimeout(function() {
+                var mensaje = document.getElementById('mensaje');
+                if (mensaje) {
+                mensaje.style.display = 'none';
+            }
+        }, 3000); // 3000 ms = 3 segundos
+        </script>
 
 
 

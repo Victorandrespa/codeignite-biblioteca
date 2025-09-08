@@ -19,7 +19,7 @@
 
                     <label for="txt_c_empleado" class="form-label">Codigo Empleado:</label>
                     <input type="text" name="txt_c_empleado" id="txt_c_empleado" class="form-control"
-                        value="<?= $datos['codigo_autor'] ?>" readonly>
+                        value="<?= $datos['codigo_empleado'] ?>" readonly>
 
                     <label for="txt_nombre" class="form-label">Nombre:</label>
                     <input type="text" name="txt_nombre" id="txt_nombre" class="form-control"

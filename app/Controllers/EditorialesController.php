@@ -15,7 +15,7 @@ class EditorialesController extends BaseController
     public function agregarEditorial()
     {
         //crear un objeto de tipo empleado model
-        $estudiante = new EditoresModel();
+        $estudiante = new EditorialesModel();
         $datos = [
             'codigo_editorial' => $this->request->getPost('txt_c_editorial'),
             'nombre' => $this->request->getPost('txt_nombre'),

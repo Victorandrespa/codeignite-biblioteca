@@ -18,27 +18,27 @@
                 <form action="<?= base_url('editar_prestamo') ?>" method="post">
 
                     <label for="txt_n_prestamo" class="form-label">Numero Prestamo:</label>
-                    <input type="text" name="txt_n_prestamo" id="txt_n_prestamo" class="form-control"
+                    <input type="number" name="txt_n_prestamo" id="txt_n_prestamo" class="form-control"
                         value="<?= $datos['numero_prestamo'] ?>" readonly>
 
                     <label for="txt_c_libro" class="form-label">Codigo Libro:</label>
-                    <input type="text" name="txt_c_libro" id="txt_c_libro" class="form-control"
+                    <input type="number" name="txt_c_libro" id="txt_c_libro" class="form-control"
                         value="<?= $datos['codigo_libro'] ?>">                    
                     
                         <label for="txt_c_alumno" class="form-label">Carne Alumno:</label>
-                    <input type="text" name="txt_c_alumno" id="txt_c_alumno" class="form-control"
+                    <input type="number" name="txt_c_alumno" id="txt_c_alumno" class="form-control"
                         value="<?= $datos['carne_alumno'] ?>">
 
                     <label for="txt_f_prestamo" class="form-label">Fecha Prestamo:</label>
-                    <input type="text" name="txt_f_prestamo" id="txt_f_prestamo" class="form-control"
+                    <input type="date" name="txt_f_prestamo" id="txt_f_prestamo" class="form-control"
                         value="<?= $datos['fecha_prestamo'] ?>">
                           
                     <label for="txt_f_devolucion" class="form-label">Fecha Devolucion:</label>
-                    <input type="text" name="txt_f_devolucion" id="txt_f_devolucion" class="form-control"
+                    <input type="date" name="txt_f_devolucion" id="txt_f_devolucion" class="form-control"
                         value="<?= $datos['fecha_devolucion'] ?>">
 
                      <label for="txt_c_empleado" class="form-label">Codigo Empleado:</label>
-                    <input type="text" name="txt_c_empleado" id="txt_c_empleado" class="form-control"
+                    <input type="number" name="txt_c_empleado" id="txt_c_empleado" class="form-control"
                         value="<?= $datos['codigo_empleado'] ?>">
                    
 

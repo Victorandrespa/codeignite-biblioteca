@@ -9,7 +9,7 @@ class EstadosModel extends Model
     protected $table = 'estados';
     protected $primaryKey = 'codigo_estado';
     protected $allowedFields = [
-        'nombre'
+        'codigo_estado', 'nombre'
     ];
     
 }

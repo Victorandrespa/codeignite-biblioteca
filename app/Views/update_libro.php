@@ -21,6 +21,10 @@
                     <input type="text" name="txt_c_libro" id="txt_c_libro" class="form-control"
                         value="<?= $datos['codigo_libro'] ?>" readonly>
 
+                    <label for="txt_c_autor" class="form-label">Codigo Autor:</label>
+                    <input type="text" name="txt_c_autor" id="txt_c_autor" class="form-control"
+                        value="<?= $datos['codigo_autor'] ?>" >
+
                     <label for="txt_c_editorial" class="form-label">Codigo Editorial:</label>
                     <input type="text" name="txt_c_editorial" id="txt_c_editorial" class="form-control"
                         value="<?= $datos['codigo_editorial'] ?>">
@@ -29,9 +33,9 @@
                     <input type="text" name="txt_titulo" id="txt_titulo" class="form-control"
                         value="<?= $datos['titulo'] ?>">
                           
-                    <label for="txt_numero" class="form-label">Numero:</label>
+                    <label for="txt_numero" class="form-label">Numero paginas:</label>
                     <input type="text" name="txt_numero" id="txt_numero" class="form-control"
-                        value="<?= $datos['numero'] ?>">
+                        value="<?= $datos['numero_paginas'] ?>">
 
                     <label for="txt_tamanio" class="form-label">Tamaño:</label>
                     <input type="text" name="txt_tamanio" id="txt_tamanio" class="form-control"

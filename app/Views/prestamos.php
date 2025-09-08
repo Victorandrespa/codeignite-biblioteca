@@ -43,22 +43,22 @@
                         <form action="agregarPrestamo" method="post">
 
                             <label for="txt_n_prestamo" class="form-label">Numero Prestamo:</label>
-                            <input type="text" name="txt_n_prestamo" id="txt_n_prestamo" class="form-control">
+                            <input type="number" name="txt_n_prestamo" id="txt_n_prestamo" class="form-control">
 
                             <label for="txt_c_libro" class="form-label">Codigo Libro:</label>
-                            <input type="text" name="txt_c_libro" id="txt_c_libro" class="form-control">
+                            <input type="number" name="txt_c_libro" id="txt_c_libro" class="form-control">
 
                             <label for="txt_c_alumno" class="form-label">Carne alumno:</label>
-                            <input type="text" name="txt_c_alumno" id="txt_c_alumno" class="form-control">
+                            <input type="number" name="txt_c_alumno" id="txt_c_alumno" class="form-control">
 
                             <label for="txt_f_prestamo" class="form-label">Fecha Prestamo:</label>
-                            <input type="text" name="txt_f_prestamo" id="txt_f_prestamo" class="form-control">
+                            <input type="date" name="txt_f_prestamo" id="txt_f_prestamo" class="form-control">
 
                             <label for="txt_f_devolucion" class="form-label">Fecha Devolucion:</label>
-                            <input type="text" name="txt_f_devolucion" id="txt_f_devolucion" class="form-control">
+                            <input type="date" name="txt_f_devolucion" id="txt_f_devolucion" class="form-control">
                             
                             <label for="txt_c_empleado" class="form-label">Codigo Empleado:</label>
-                            <input type="text" name="txt_c_empleado" id="txt_c_empleado" class="form-control">
+                            <input type="number" name="txt_c_empleado" id="txt_c_empleado" class="form-control">
                            
 
                             <div class="d-flex justify-content-center mt-3">
@@ -76,6 +76,20 @@
 
 
 
+        <?php if (session()->getFlashdata('mensaje')): ?>
+            <div id="mensaje" class="alert alert-success">
+                <?= session()->getFlashdata('mensaje'); ?>
+            </div>
+        <?php endif; ?>
+        <script>
+        // Ocultar el mensaje después de 3 segundos
+            setTimeout(function() {
+                var mensaje = document.getElementById('mensaje');
+                if (mensaje) {
+                mensaje.style.display = 'none';
+            }
+        }, 3000); // 3000 ms = 3 segundos
+        </script>
 
 
 
@@ -118,3 +132,21 @@
         </table>
 
     </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

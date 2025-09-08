@@ -72,6 +72,21 @@
 
 
 
+         <?php if (session()->getFlashdata('mensaje')): ?>
+            <div id="mensaje" class="alert alert-success">
+                <?= session()->getFlashdata('mensaje'); ?>
+            </div>
+        <?php endif; ?>
+        <script>
+        // Ocultar el mensaje después de 3 segundos
+            setTimeout(function() {
+                var mensaje = document.getElementById('mensaje');
+                if (mensaje) {
+                mensaje.style.display = 'none';
+            }
+        }, 3000); // 3000 ms = 3 segundos
+        </script>
+
 
 
 
@@ -112,3 +127,21 @@
         </table>
 
     </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

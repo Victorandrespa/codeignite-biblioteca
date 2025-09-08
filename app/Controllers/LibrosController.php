@@ -46,12 +46,12 @@ class LibrosController extends BaseController
     {
         $estudiante = new LibrosModel();
         $datos['datos']= $estudiante->where(['codigo_libro' => $id])->first();
-        return view('update_ibro', $datos);
+        return view('update_libro', $datos);
     }
     public function editar($id)
     {
         $datos= [
-            'codigo_libro' => $this->request->getPost('txt_id'),
+            'codigo_libro' => $this->request->getPost('txt_c_libro'),
             'codigo_autor' => $this->request->getPost('txt_c_autor'),
             'codigo_editorial' => $this->request->getPost('txt_c_editorial'),
             'titulo' => $this->request->getPost('txt_titulo'),
